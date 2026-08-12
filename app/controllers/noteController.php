@@ -1,11 +1,12 @@
 <?php
 require_once dirname(__DIR__)."/models/noteModel.php";
+require_once dirname(__DIR__)."/models/anneeModel.php";
 
 function note() : void {
     $classes = getAllTable('classes');
     $periodes = getAllTable('periodes');
     $matieres = getAllTable('matieres');
-    $annee = getAnneeActive();
+     $anneeActive = getAnneeActive();
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
         $matiere = (int) $_POST['matiere'];
         $periode = (int) $_POST['periode'];
