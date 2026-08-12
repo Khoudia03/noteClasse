@@ -5,6 +5,7 @@ $matieres = $matieres ?? [];
 $utilisateur = $_SESSION['connexion'];
 $moyennes = $moyennes ?? 0;
 $anneeActive = $anneeActive ?? [];
+$matiereNonEnseignee = $matiereNonEnseignee ?? false;
 // var_dump($utilisateur);
 // die;
 
